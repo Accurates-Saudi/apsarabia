@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APS — Company Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="preview-bar no-print" role="region" aria-label="Preview controls">
+      <span class="preview-bar__hint">A4 portrait (twelve pages) — Print → Save as PDF; enable background graphics.</span>
+      <button type="button" class="preview-bar__btn" id="btnPrint">Print / Save PDF</button>
+    </div>
+
+    <div class="stage">
+      <div class="stage__inner" id="parallaxRoot">
+        <article class="cover" id="cover" data-parallax>
+          <div class="cover__media">
+            <img
+              class="cover__hero"
+              src="assets/cover4.webp"
+              alt=""
+              fetchpriority="high"
+            />
+            <div class="cover__overlay cover__overlay--warmth" aria-hidden="true"></div>
+            <div class="cover__hero-blur" aria-hidden="true"></div>
+            <div class="cover__overlay cover__overlay--vignette" aria-hidden="true"></div>
+            <div class="cover__overlay cover__overlay--gradient" aria-hidden="true"></div>
+            <div class="cover__overlay cover__overlay--mesh" aria-hidden="true"></div>
+          </div>
+
+          <header class="brochure-head brochure-head--cover">
+            <img
+              class="brochure-head__logo brochure-head__logo--cover"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+          </header>
+
+          <div class="cover__main">
+            <section class="cover__copy">
+              <p class="cover__activities">
+                <span>Safety</span>
+                <span class="cover__dot" aria-hidden="true"></span>
+                <span>Electrical</span>
+                <span class="cover__dot" aria-hidden="true"></span>
+                <span>Welding</span>
+              </p>
+              <h1 class="cover__title">Accurate <span>Project Solutions</span></h1>
+              <p class="cover__tagline">Reliable Industrial &amp; Trading Partner</p>
+              <p class="cover__subline">Supply of industrial consumables, safety products, and solutions</p>
+              <p class="cover__web">www.apsarabia.sa</p>
+            </section>
+            <div class="cover__main-spacer" aria-hidden="true"></div>
+          </div>
+
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+
+        <article class="sheet sheet--about" id="about" aria-label="About Us">
+          <div class="sheet__bg" aria-hidden="true"></div>
+
+          <header class="brochure-head brochure-head--inner">
+            <img
+              class="brochure-head__logo brochure-head__logo--inner"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+            <div class="brochure-head__page">
+              <p class="brochure-head__label">Company profile</p>
+              <h2 class="brochure-head__title">About Us</h2>
+              <div class="brochure-head__rule" aria-hidden="true"></div>
+            </div>
+          </header>
+
+          <div class="sheet__inner">
+            <div class="about__content">
+              <div class="about__intro-block">
+                <section class="about__text" aria-label="Company overview">
+                  <p class="about__kicker">Industrial &amp; project solutions · Saudi Arabia</p>
+                  <div class="about__intro">
+                    <p>
+                      APS is a trusted industrial and project solutions company based in Saudi Arabia, delivering
+                      high-quality products, equipment, and comprehensive supply solutions across multiple industries.
+                    </p>
+                    <p>
+                      We specialize in sourcing and supplying reliable industrial materials, safety products, tools,
+                      and essential consumables to support operations in oil &amp; gas, construction, manufacturing, and
+                      infrastructure sectors.
+                    </p>
+                    <p>
+                      With a strong commitment to quality, efficiency, and customer satisfaction, APS serves as
+                      a dependable partner for businesses seeking consistent and cost-effective trading solutions. We
+                      work closely with clients to understand project requirements and deliver fit-for-purpose
+                      products on time. Our responsive support team ensures smooth coordination from inquiry through
+                      final delivery.
+                    </p>
+                  </div>
+                </section>
+
+                <figure class="about__figure about__figure--hero" aria-label="Industrial operations">
+                  <img src="assets/industry.webp" alt="" width="1200" height="1600" loading="lazy" />
+                  <figcaption>Industrial operations</figcaption>
+                </figure>
+              </div>
+
+              <div class="about__mosaic" aria-label="Photography">
+                <figure class="about__figure about__figure--wide">
+                  <img src="assets/pipes.jpg" alt="" width="1200" height="800" loading="lazy" />
+                  <figcaption>Industrial Consumables</figcaption>
+                </figure>
+                <figure class="about__figure about__figure--wide">
+                  <img src="assets/equipment.webp" alt="" width="1200" height="800" loading="lazy" />
+                  <figcaption>Project Supplies</figcaption>
+                </figure>
+              </div>
+
+              <section class="about__vm" aria-label="Vision and mission">
+                <div class="about__card about__card--vision">
+                  <span class="about__card-num" aria-hidden="true">01</span>
+                  <div class="about__card-head">
+                    <svg class="about__card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke-linecap="round" stroke-linejoin="round" />
+                      <circle cx="12" cy="12" r="3" />
+                    </svg>
+                    <h3 class="about__card-label">Vision</h3>
+                  </div>
+                  <p class="about__card-text">
+                    To be a trusted regional supplier of oil and gas plant materials, project supply solutions, and
+                    industrial consumables, recognized for reliability, quality, and timely delivery.
+                  </p>
+                </div>
+                <div class="about__card about__card--mission">
+                  <span class="about__card-num" aria-hidden="true">02</span>
+                  <div class="about__card-head">
+                    <svg class="about__card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" />
+                      <circle cx="12" cy="12" r="6" />
+                      <circle cx="12" cy="12" r="2" />
+                    </svg>
+                    <h3 class="about__card-label">Mission</h3>
+                  </div>
+                  <p class="about__card-text">
+                    To support construction, maintenance, and operations with dependable materials that meet industry
+                    standards, while providing competitive pricing, efficient service, and consistent client support.
+                  </p>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+
+        <!-- ——— Catalog: Safety ——— -->
+        <article class="sheet sheet--catalog sheet--catalog-safety" id="catalog-safety" aria-label="Safety and industrial essentials">
+          <div class="sheet__bg" aria-hidden="true"></div>
+
+          <header class="brochure-head brochure-head--inner">
+            <img
+              class="brochure-head__logo brochure-head__logo--inner"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+            <div class="brochure-head__page">
+              <p class="brochure-head__label">Product catalogue</p>
+              <h2 class="brochure-head__title">Safety &amp; PPE Supplies</h2>
+              <div class="brochure-head__rule" aria-hidden="true"></div>
+            </div>
+          </header>
+          <div class="sheet__inner sheet__inner--catalog">
+            <section class="catalog-section">
+              <h3 class="catalog-section__title"><span class="catalog-section__bar" aria-hidden="true"></span>Popular Safety &amp; PPE Supplies</h3>
+              <div class="catalog-grid">
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/helmet.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Safety helmets</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/vest.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Reflective vests</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/gloves.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Safety gloves</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/shoes.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Safety shoes</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/goggles.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Safety goggles</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/coverall.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Coveralls</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/shield.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Face shields</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/earmuff.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Ear plugs &amp; ear muffs</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/mask.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Respirators &amp; dust masks</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/harness.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Fall protection harnesses</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/extinguisher.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Fire extinguishers</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/firstaid.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>First aid kits</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/cones.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Safety cones</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/tape.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Barricade tape</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/safety/bucket.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Fire bucket</figcaption></figure>
+              </div>
+            </section>
+          </div>
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span><span class="brochure-foot__sep" aria-hidden="true">|</span><span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+
+        <!-- ——— Catalog: Hand tools ——— -->
+        <article class="sheet sheet--catalog sheet--catalog-hand-tools" id="catalog-hand-tools" aria-label="Hand tools">
+          <div class="sheet__bg" aria-hidden="true"></div>
+
+          <header class="brochure-head brochure-head--inner">
+            <img
+              class="brochure-head__logo brochure-head__logo--inner"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+            <div class="brochure-head__page">
+              <p class="brochure-head__label">Product catalogue</p>
+              <h2 class="brochure-head__title">Hand Tools</h2>
+              <div class="brochure-head__rule" aria-hidden="true"></div>
+            </div>
+          </header>
+          <div class="sheet__inner sheet__inner--catalog">
+            <section class="catalog-section">
+              <h3 class="catalog-section__title"><span class="catalog-section__bar" aria-hidden="true"></span>Popular Hand Tools</h3>
+              <div class="catalog-grid">
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/hammer.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Hammer</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/screwdriver.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Screwdriver set</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/combination.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Combination pliers</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/longnose.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Long nose pliers</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/wrench.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Adjustable wrench</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/spanner.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Spanner set</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/allenkey.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Allen key set</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/tape.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Measuring tape</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/knife.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Utility knife</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/saw.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Hand saw</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/level.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Spirit level</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/socket.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Socket set</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/pipe-wrench.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Pipe wrench</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/chisel.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Chisel set</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/handtools/wire-cutter.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Wire cutter</figcaption></figure>
+              </div>
+            </section>
+          </div>
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span><span class="brochure-foot__sep" aria-hidden="true">|</span><span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+
+        <!-- ——— Catalog: Electrical ——— -->
+        <article class="sheet sheet--catalog sheet--catalog-electrical" id="catalog-electrical" aria-label="Electrical materials">
+          <div class="sheet__bg" aria-hidden="true"></div>
+
+          <header class="brochure-head brochure-head--inner">
+            <img
+              class="brochure-head__logo brochure-head__logo--inner"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+            <div class="brochure-head__page">
+              <p class="brochure-head__label">Product catalogue</p>
+              <h2 class="brochure-head__title">Electrical Materials</h2>
+              <div class="brochure-head__rule" aria-hidden="true"></div>
+            </div>
+          </header>
+          <div class="sheet__inner sheet__inner--catalog">
+            <section class="catalog-section">
+              <h3 class="catalog-section__title"><span class="catalog-section__bar" aria-hidden="true"></span>Major Electrical Materials</h3>
+              <div class="catalog-grid">
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/cable.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Cables &amp; wires</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/tray.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Cable trays</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/fittings.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Conduits &amp; fittings</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/pcb.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Circuit breakers (MCB/MCCB)</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/distribution.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Distribution boards</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/switches.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Switches &amp; sockets</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/plug.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Industrial plugs &amp; connectors</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/control-panel.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Control panels</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/relays.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Relays &amp; contactors</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/tapes.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Electrical tapes</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/glands.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Cable glands</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/lights.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>LED lights &amp; fixtures</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/junction.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Junction boxes</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/lugs.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Cable lugs &amp; terminals</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/electrical/earthing.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Earthing rods &amp; accessories</figcaption></figure>
+              </div>
+            </section>
+          </div>
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span><span class="brochure-foot__sep" aria-hidden="true">|</span><span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+
+        <!-- ——— Catalog: Power tools ——— -->
+        <article class="sheet sheet--catalog sheet--catalog-power-tools" id="catalog-power-tools" aria-label="Power tools">
+          <div class="sheet__bg" aria-hidden="true"></div>
+
+          <header class="brochure-head brochure-head--inner">
+            <img
+              class="brochure-head__logo brochure-head__logo--inner"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+            <div class="brochure-head__page">
+              <p class="brochure-head__label">Product catalogue</p>
+              <h2 class="brochure-head__title">Power Tools</h2>
+              <div class="brochure-head__rule" aria-hidden="true"></div>
+            </div>
+          </header>
+          <div class="sheet__inner sheet__inner--catalog">
+            <section class="catalog-section">
+              <h3 class="catalog-section__title"><span class="catalog-section__bar" aria-hidden="true"></span>Popular Power Tools</h3>
+              <div class="catalog-grid">
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/drill.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Cordless drill</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/impact.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Impact driver</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/angle-grinder.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Angle grinder</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/rotary.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Rotary hammer</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/jigsaw.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Jigsaw</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/circular-saw.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Circular saw</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/reciprocating-saw.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Reciprocating saw</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/sander.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Electric sander</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/heat-gun.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Heat gun</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/polisher.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Polisher</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/planer.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Electric planer</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/router.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Wood router</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/grinder.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Bench grinder</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/nailgun.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Nail gun</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/power/vaccum.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Wet &amp; dry vacuum</figcaption></figure>
+              </div>
+            </section>
+          </div>
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span><span class="brochure-foot__sep" aria-hidden="true">|</span><span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+
+        <!-- ——— Catalog: Welding materials ——— -->
+        <article class="sheet sheet--catalog sheet--catalog-welding" id="catalog-welding" aria-label="Welding materials">
+          <div class="sheet__bg" aria-hidden="true"></div>
+
+          <header class="brochure-head brochure-head--inner">
+            <img
+              class="brochure-head__logo brochure-head__logo--inner"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+            <div class="brochure-head__page">
+              <p class="brochure-head__label">Product catalogue</p>
+              <h2 class="brochure-head__title">Welding Materials</h2>
+              <div class="brochure-head__rule" aria-hidden="true"></div>
+            </div>
+          </header>
+          <div class="sheet__inner sheet__inner--catalog">
+            <section class="catalog-section">
+              <h3 class="catalog-section__title"><span class="catalog-section__bar" aria-hidden="true"></span>Major Welding Materials</h3>
+              <div class="catalog-grid">
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/electrodes.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Welding electrodes</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/solid-wire.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>MIG solid wire</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/flux-wire.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Flux-cored wire</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/filler-rods.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>TIG filler rods</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/gloves.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Welding gloves</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/helmet.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Welding helmets</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/jacket.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Welding jackets &amp; aprons</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/hammer.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Chipping hammers</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/rowbrush.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Wire brushes</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/holders.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Electrode holders</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/clamps.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Earth clamps</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/regulators.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Gas regulators &amp; flowmeters</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/nozzles.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Torch nozzles &amp; tips</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/fluid.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Anti-spatter fluids</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/welding/cutting-disc.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Grinding &amp; cutting discs</figcaption></figure>
+              </div>
+            </section>
+          </div>
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span><span class="brochure-foot__sep" aria-hidden="true">|</span><span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+
+        <!-- ——— Catalog: Lifting items ——— -->
+        <article class="sheet sheet--catalog sheet--catalog-lifting" id="catalog-lifting" aria-label="Lifting equipment">
+          <div class="sheet__bg" aria-hidden="true"></div>
+
+          <header class="brochure-head brochure-head--inner">
+            <img
+              class="brochure-head__logo brochure-head__logo--inner"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+            <div class="brochure-head__page">
+              <p class="brochure-head__label">Product catalogue</p>
+              <h2 class="brochure-head__title">Lifting Items</h2>
+              <div class="brochure-head__rule" aria-hidden="true"></div>
+            </div>
+          </header>
+          <div class="sheet__inner sheet__inner--catalog">
+            <section class="catalog-section">
+              <h3 class="catalog-section__title"><span class="catalog-section__bar" aria-hidden="true"></span>Major Lifting Items</h3>
+              <div class="catalog-grid">
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/chain-sling.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Chain slings</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/rope-slings.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Wire rope slings</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/webbing-sling.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Webbing slings</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/shackle.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Shackles</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/hook.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Lifting hooks</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/links.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Master links</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/turn-buckle.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Turnbuckles</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/hoist.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Chain hoists</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/lever-hoist.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Lever hoists</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/beam-clamps.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Beam clamps</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/lifting-clamps.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Plate &amp; lifting clamps</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/lifting-beam.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Spreader bars &amp; lifting beams</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/load-binders.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Load binders &amp; ratchets</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/eye-bolt.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Lifting points &amp; eye bolts</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/lifting/nets.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Cargo nets &amp; lifting nets</figcaption></figure>
+              </div>
+            </section>
+          </div>
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span><span class="brochure-foot__sep" aria-hidden="true">|</span><span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+
+        <!-- ——— Catalog: General products (1 of 3) ——— -->
+        <article class="sheet sheet--catalog sheet--catalog-general" id="catalog-general-1" aria-label="General products — equipment and site">
+          <div class="sheet__bg" aria-hidden="true"></div>
+
+          <header class="brochure-head brochure-head--inner">
+            <img
+              class="brochure-head__logo brochure-head__logo--inner"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+            <div class="brochure-head__page">
+              <p class="brochure-head__label">Product catalogue</p>
+              <h2 class="brochure-head__title">General Products</h2>
+              <div class="brochure-head__rule" aria-hidden="true"></div>
+            </div>
+          </header>
+          <div class="sheet__inner sheet__inner--catalog">
+            <section class="catalog-section">
+              <h3 class="catalog-section__title"><span class="catalog-section__bar" aria-hidden="true"></span>Major General Products — Equipment &amp; site</h3>
+              <div class="catalog-grid">
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/generator.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Generators</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/pump.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Water pumps</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/submersible.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Submersible pumps</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/pressure-washers.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Pressure washers</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/compressor.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Air compressors</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/fans.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Industrial fans</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/heaters.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Electric space heaters</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/dehumidifiers.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Dehumidifiers</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/thermometers.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Thermometers</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/hygrometers.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Hygrometers</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/moisture-meters.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Moisture meters</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/laser-meters.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Laser distance meters</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/containers.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Fuel containers</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/spill-kit.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Oil spill kits</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-1/mover.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Air movers</figcaption></figure>
+              </div>
+            </section>
+          </div>
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span><span class="brochure-foot__sep" aria-hidden="true">|</span><span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+
+        <!-- ——— Catalog: General products (2 of 3) ——— -->
+        <article class="sheet sheet--catalog sheet--catalog-general" id="catalog-general-2" aria-label="General products — storage and facility">
+          <div class="sheet__bg" aria-hidden="true"></div>
+
+          <header class="brochure-head brochure-head--inner">
+            <img
+              class="brochure-head__logo brochure-head__logo--inner"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+            <div class="brochure-head__page">
+              <p class="brochure-head__label">Product catalogue</p>
+              <h2 class="brochure-head__title">General Products</h2>
+              <div class="brochure-head__rule" aria-hidden="true"></div>
+            </div>
+          </header>
+          <div class="sheet__inner sheet__inner--catalog">
+            <section class="catalog-section">
+              <h3 class="catalog-section__title"><span class="catalog-section__bar" aria-hidden="true"></span>Major General Products — Storage &amp; facility</h3>
+              <div class="catalog-grid">
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/buckets.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Buckets</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/trash-bag.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Trash bags</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/wheel-barrow.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Wheelbarrows</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/totes.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Storage totes</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/drum.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Plastic drums</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/wrap.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Stretch wrap</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/bubble-wrap.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Bubble wrap</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/tarp.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Tarps</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/poly-sheet.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Poly sheeting</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/chemicals.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Industrial cleaning chemicals</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/towel.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Paper towels (industrial)</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/mops.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Mops &amp; handles</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/brooms.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Brooms</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/wet-sign.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Wet floor signs</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-2/bin.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Waste bins</figcaption></figure>
+              </div>
+            </section>
+          </div>
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span><span class="brochure-foot__sep" aria-hidden="true">|</span><span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+
+        <!-- ——— Catalog: General products (3 of 3) ——— -->
+        <article class="sheet sheet--catalog sheet--catalog-general" id="catalog-general-3" aria-label="General products — workshop and maintenance">
+          <div class="sheet__bg" aria-hidden="true"></div>
+
+          <header class="brochure-head brochure-head--inner">
+            <img
+              class="brochure-head__logo brochure-head__logo--inner"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+            <div class="brochure-head__page">
+              <p class="brochure-head__label">Product catalogue</p>
+              <h2 class="brochure-head__title">General Products</h2>
+              <div class="brochure-head__rule" aria-hidden="true"></div>
+            </div>
+          </header>
+          <div class="sheet__inner sheet__inner--catalog">
+            <section class="catalog-section">
+              <h3 class="catalog-section__title"><span class="catalog-section__bar" aria-hidden="true"></span>Major General Products — Workshop &amp; maintenance</h3>
+              <div class="catalog-grid">
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/step-ladder.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Step ladders</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/ladder.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Extension ladders</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/platform.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Mobile work platforms</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/sawhorses.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Sawhorses</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/bench.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Workbenches</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/grease-gun.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Grease guns</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/sealant.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Sealants &amp; adhesives</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/tie.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Cable ties</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/clamp.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Hose clamps</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/sandpaper.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Sandpaper &amp; abrasives</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/padlocks.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Padlocks</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/paint.webp" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Marking paint</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/spray.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Spray bottles</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/rope.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Utility rope</figcaption></figure>
+                <figure class="catalog-item"><div class="catalog-item__img-wrap"><img src="catalog/general-3/duct-tape.png" alt="" width="480" height="360" loading="lazy" /></div><figcaption>Duct tape</figcaption></figure>
+              </div>
+            </section>
+          </div>
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span><span class="brochure-foot__sep" aria-hidden="true">|</span><span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+
+        <!-- ——— Contact (final page) ——— -->
+        <article class="sheet sheet--contact" id="contact" aria-label="Contact Us">
+          <div class="contact__media" aria-hidden="true">
+            <img src="assets/industry.webp" alt="" width="1200" height="1600" loading="lazy" decoding="async" />
+            <div class="contact__media-scrim"></div>
+          </div>
+          <div class="sheet__bg" aria-hidden="true"></div>
+
+          <header class="brochure-head brochure-head--inner">
+            <img
+              class="brochure-head__logo brochure-head__logo--inner"
+              src="assets/logo.webp"
+              alt="APS"
+              width="512"
+              height="200"
+            />
+            <div class="brochure-head__page">
+              <p class="brochure-head__label">Company profile</p>
+              <h2 class="brochure-head__title">Get In Touch</h2>
+              <div class="brochure-head__rule" aria-hidden="true"></div>
+            </div>
+          </header>
+
+          <div class="sheet__inner sheet__inner--contact">
+            <div class="contact__layout">
+              <div class="contact__card">
+                <ul class="contact__list">
+                  <li class="contact__row">
+                    <span class="contact__icon-wrap" aria-hidden="true">
+                      <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                    </span>
+                    <div class="contact__body">
+                      <p class="contact__label">Our Office</p>
+                      <p class="contact__value">
+                        3rd Floor, Bldg No 2869<br />
+                        King Faisal St, At Tubayshi<br />
+                        Ad Dammam, Saudi Arabia
+                      </p>
+                    </div>
+                  </li>
+                  <li class="contact__row">
+                    <span class="contact__icon-wrap" aria-hidden="true">
+                      <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                      </svg>
+                    </span>
+                    <div class="contact__body">
+                      <p class="contact__label">Email Us</p>
+                      <p class="contact__value">
+                        <a class="contact__link" href="mailto:info@apsarabia.sa">info@apsarabia.sa</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="contact__row">
+                    <span class="contact__icon-wrap" aria-hidden="true">
+                      <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                    </span>
+                    <div class="contact__body">
+                      <p class="contact__label">Call Us</p>
+                      <p class="contact__value">
+                        <a class="contact__link" href="tel:+966536326303">+966 53 632 6303</a>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contact__divider" aria-hidden="true"></div>
+
+              <div class="contact__hours">
+                <span class="contact__icon-wrap contact__icon-wrap--sm" aria-hidden="true">
+                  <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </span>
+                <div class="contact__hours-text">
+                  <p class="contact__label">Working Hours</p>
+                  <p class="contact__hours-value">8:30 AM – 5:30 PM</p>
+                </div>
+              </div>
+
+              <p class="contact__web">
+                <a class="contact__web-link" href="https://www.apsarabia.sa" rel="noopener noreferrer">www.apsarabia.sa</a>
+              </p>
+
+              <p class="contact__closing">
+                Your trusted partner for industrial trading, sourcing, and supply solutions in Saudi Arabia.
+              </p>
+            </div>
+          </div>
+
+          <footer class="brochure-foot brochure-foot--cover">
+            <div class="brochure-foot__inner">
+              <p class="brochure-foot__line">
+                <span>Welding Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Electrical Materials</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Safety Products &amp; PPE</span>
+              </p>
+              <p class="brochure-foot__line">
+                <span>Industrial Tools &amp; Consumables</span>
+                <span class="brochure-foot__sep" aria-hidden="true">|</span>
+                <span>Building Materials &amp; MRO Supplies</span>
+              </p>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

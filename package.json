@@ -1,0 +1,15 @@
+{
+  "name": "accurates-brochure",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "compress:images": "node scripts/compress-images.mjs",
+    "compress:images:backup": "node scripts/compress-images.mjs --backup",
+    "compress:500kb": "node scripts/ensure-max-500kb.mjs",
+    "to-webp": "node scripts/to-webp-all.mjs",
+    "catalog:to-webp": "node scripts/catalog-remote-to-webp.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}
