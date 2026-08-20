@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Materials in Saudi Arabia | Accurate Project Solutions</title>
+    <meta name="description" content="Electrical Materials supplied across Saudi Arabia by Accurate Project Solutions (APS). Cables, trays, switches, and electrical components for industrial and infrastructure projects.">
+    <link rel="icon" href="../assets/arrow-logo.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Outfit', 'system-ui', 'sans-serif'],
+                        body: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            500: '#14b8a6', // Teal
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        },
+                        accent: '#ea580c', // Orange
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body { overflow-x: hidden; max-width: 100%; }
+        section[id] { scroll-margin-top: 6rem; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-heading { font-family: 'Outfit', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+
+        /* Scroll-reveal for product/category cards */
+        .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.55s ease, transform 0.55s cubic-bezier(.22,1,.36,1); }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-200/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 md:h-24 items-center">
+                <a href="../index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <img class="h-16 md:h-24 w-auto" src="../assets/logo.webp" alt="APS Logo">
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="../index.html#about" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">About Us</a>
+                    <a href="../index.html#products" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors text-brand-600">Products</a>
+                    <a href="../certifications.html" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">Certifications</a>
+                    <a href="../index.html#contact" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">Contact</a>
+                    <a href="../brochure.html" class="bg-brand-600 hover:bg-brand-700 text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5">View Brochure</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"
+                        class="md:hidden inline-flex items-center justify-center w-12 h-12 -mr-2 rounded-xl text-slate-700 hover:bg-slate-100 active:bg-slate-200 transition-colors">
+                    <svg id="menuIconOpen" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16M4 12h16M4 17h16"></path></svg>
+                    <svg id="menuIconClose" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu panel -->
+        <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200/80 bg-white/95 backdrop-blur-xl">
+            <div class="px-4 py-4 space-y-1">
+                <a href="../index.html#about" class="mobile-link block px-4 py-3.5 rounded-xl text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-semibold transition-colors">About Us</a>
+                <a href="../index.html#products" class="mobile-link block px-4 py-3.5 rounded-xl text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-semibold transition-colors bg-brand-50 text-brand-600">Products</a>
+                <a href="../certifications.html" class="mobile-link block px-4 py-3.5 rounded-xl text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-semibold transition-colors">Certifications</a>
+                <a href="../index.html#contact" class="mobile-link block px-4 py-3.5 rounded-xl text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-semibold transition-colors">Contact</a>
+                <a href="../brochure.html" class="mobile-link block text-center bg-brand-600 hover:bg-brand-700 text-white px-6 py-3.5 rounded-xl font-bold transition-colors mt-2">View Brochure</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-28 md:pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="flex items-center gap-2 text-sm text-slate-500 font-medium mb-6 flex-wrap"><a href="../index.html" class="hover:text-brand-600 transition-colors">Home</a><svg class="w-3.5 h-3.5 text-slate-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg><a href="../index.html#products" class="hover:text-brand-600 transition-colors">Products</a><svg class="w-3.5 h-3.5 text-slate-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg><span class="text-slate-700 font-semibold">Electrical Materials</span></div>
+
+            <div class="lg:grid lg:grid-cols-[260px_1fr] lg:gap-10 xl:gap-14">
+
+                <!-- Sidebar (desktop) -->
+                <aside class="hidden lg:block">
+                    <div class="lg:sticky lg:top-28">
+                        <h2 class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-4 px-4">Categories</h2>
+                <nav class="space-y-1">
+                <a href="safety.html" class="group flex items-center gap-3 px-4 py-3 rounded-xl border-l-[3px] transition-all duration-200 border-transparent hover:bg-slate-50 hover:border-brand-200 hover:translate-x-0.5">
+                    <div class="w-9 h-9 rounded-lg bg-white border border-slate-100 shadow-sm flex items-center justify-center p-1.5 shrink-0">
+                        <img src="../catalog/safety/helmet.png" alt="" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm font-semibold text-slate-600 group-hover:text-slate-900 transition-colors">Safety & PPE Supplies</span>
+                </a>
+                <a href="hand-tools.html" class="group flex items-center gap-3 px-4 py-3 rounded-xl border-l-[3px] transition-all duration-200 border-transparent hover:bg-slate-50 hover:border-brand-200 hover:translate-x-0.5">
+                    <div class="w-9 h-9 rounded-lg bg-white border border-slate-100 shadow-sm flex items-center justify-center p-1.5 shrink-0">
+                        <img src="../catalog/handtools/hammer.png" alt="" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm font-semibold text-slate-600 group-hover:text-slate-900 transition-colors">Hand Tools</span>
+                </a>
+                <a href="electrical.html" class="group flex items-center gap-3 px-4 py-3 rounded-xl border-l-[3px] transition-all duration-200 bg-brand-50 border-brand-500">
+                    <div class="w-9 h-9 rounded-lg bg-white border border-slate-100 shadow-sm flex items-center justify-center p-1.5 shrink-0">
+                        <img src="../catalog/electrical/cable.webp" alt="" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm font-semibold text-brand-700 transition-colors">Electrical Materials</span>
+                </a>
+                <a href="power-tools.html" class="group flex items-center gap-3 px-4 py-3 rounded-xl border-l-[3px] transition-all duration-200 border-transparent hover:bg-slate-50 hover:border-brand-200 hover:translate-x-0.5">
+                    <div class="w-9 h-9 rounded-lg bg-white border border-slate-100 shadow-sm flex items-center justify-center p-1.5 shrink-0">
+                        <img src="../catalog/power/drill.webp" alt="" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm font-semibold text-slate-600 group-hover:text-slate-900 transition-colors">Power Tools</span>
+                </a>
+                <a href="welding.html" class="group flex items-center gap-3 px-4 py-3 rounded-xl border-l-[3px] transition-all duration-200 border-transparent hover:bg-slate-50 hover:border-brand-200 hover:translate-x-0.5">
+                    <div class="w-9 h-9 rounded-lg bg-white border border-slate-100 shadow-sm flex items-center justify-center p-1.5 shrink-0">
+                        <img src="../catalog/welding/electrodes.png" alt="" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm font-semibold text-slate-600 group-hover:text-slate-900 transition-colors">Welding Materials</span>
+                </a>
+                <a href="lifting.html" class="group flex items-center gap-3 px-4 py-3 rounded-xl border-l-[3px] transition-all duration-200 border-transparent hover:bg-slate-50 hover:border-brand-200 hover:translate-x-0.5">
+                    <div class="w-9 h-9 rounded-lg bg-white border border-slate-100 shadow-sm flex items-center justify-center p-1.5 shrink-0">
+                        <img src="../catalog/lifting/chain-sling.png" alt="" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm font-semibold text-slate-600 group-hover:text-slate-900 transition-colors">Lifting Items</span>
+                </a>
+                <a href="general.html" class="group flex items-center gap-3 px-4 py-3 rounded-xl border-l-[3px] transition-all duration-200 border-transparent hover:bg-slate-50 hover:border-brand-200 hover:translate-x-0.5">
+                    <div class="w-9 h-9 rounded-lg bg-white border border-slate-100 shadow-sm flex items-center justify-center p-1.5 shrink-0">
+                        <img src="../catalog/general-1/generator.png" alt="" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm font-semibold text-slate-600 group-hover:text-slate-900 transition-colors">General Products</span>
+                </a>
+                </nav>
+                    </div>
+                </aside>
+
+                <div>
+            <div class="lg:hidden -mx-4 px-4 mb-8 flex gap-2.5 overflow-x-auto pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+                <a href="safety.html" class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded-full border text-sm font-semibold whitespace-nowrap transition-colors bg-white border-slate-200 text-slate-600 hover:border-brand-300 hover:text-brand-600">Safety & PPE Supplies</a>
+                <a href="hand-tools.html" class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded-full border text-sm font-semibold whitespace-nowrap transition-colors bg-white border-slate-200 text-slate-600 hover:border-brand-300 hover:text-brand-600">Hand Tools</a>
+                <a href="electrical.html" class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded-full border text-sm font-semibold whitespace-nowrap transition-colors bg-brand-600 border-brand-600 text-white">Electrical Materials</a>
+                <a href="power-tools.html" class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded-full border text-sm font-semibold whitespace-nowrap transition-colors bg-white border-slate-200 text-slate-600 hover:border-brand-300 hover:text-brand-600">Power Tools</a>
+                <a href="welding.html" class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded-full border text-sm font-semibold whitespace-nowrap transition-colors bg-white border-slate-200 text-slate-600 hover:border-brand-300 hover:text-brand-600">Welding Materials</a>
+                <a href="lifting.html" class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded-full border text-sm font-semibold whitespace-nowrap transition-colors bg-white border-slate-200 text-slate-600 hover:border-brand-300 hover:text-brand-600">Lifting Items</a>
+                <a href="general.html" class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded-full border text-sm font-semibold whitespace-nowrap transition-colors bg-white border-slate-200 text-slate-600 hover:border-brand-300 hover:text-brand-600">General Products</a>
+            </div>
+
+                    <div class="mb-10">
+                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading mb-4 leading-tight">Electrical Materials in Saudi Arabia</h2>
+                        <p class="text-slate-600 leading-relaxed max-w-3xl">Cables, trays, switches, and electrical components for industrial and infrastructure projects.</p>
+                    </div>
+
+                    <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:0ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/cable.webp" alt="Cables & wires" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Cables & wires</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:45ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/tray.webp" alt="Cable trays" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Cable trays</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:90ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/fittings.webp" alt="Conduits & fittings" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Conduits & fittings</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:135ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/pcb.png" alt="Circuit breakers (MCB/MCCB)" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Circuit breakers (MCB/MCCB)</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:180ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/distribution.png" alt="Distribution boards" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Distribution boards</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:225ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/switches.png" alt="Switches & sockets" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Switches & sockets</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:270ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/plug.png" alt="Industrial plugs & connectors" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Industrial plugs & connectors</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:315ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/control-panel.png" alt="Control panels" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Control panels</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:360ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/relays.png" alt="Relays & contactors" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Relays & contactors</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:405ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/tapes.png" alt="Electrical tapes" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Electrical tapes</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:0ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/glands.png" alt="Cable glands" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Cable glands</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:45ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/lights.png" alt="LED lights & fixtures" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">LED lights & fixtures</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:90ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/junction.png" alt="Junction boxes" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Junction boxes</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:135ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/lugs.png" alt="Cable lugs & terminals" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Cable lugs & terminals</h4>
+                    </div>
+                    <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:180ms">
+                        <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="../catalog/electrical/earthing.png" alt="Earthing rods & accessories" loading="lazy" class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                        </div>
+                        <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Earthing rods & accessories</h4>
+                    </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="mt-14 relative rounded-3xl border border-slate-200/70 bg-gradient-to-r from-slate-900 to-slate-800 overflow-hidden p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+                        <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-brand-500/20 blur-3xl"></div>
+                        <div class="relative z-10">
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-white font-heading mb-2">Need a quote for Electrical Materials?</h3>
+                            <p class="text-slate-300 text-sm sm:text-base">Tell us your requirements and our team will get back to you with pricing and availability.</p>
+                        </div>
+                        <a href="../index.html#contact" class="relative z-10 shrink-0 inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto">
+                            Request a Quote
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+
+            <div class="mt-16 sm:mt-20 pt-10 border-t border-slate-100">
+                <h3 class="text-xl font-extrabold text-slate-900 font-heading mb-6">Explore Other Categories</h3>
+                <div class="flex sm:grid sm:grid-cols-3 lg:grid-cols-6 gap-4 overflow-x-auto pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+                    <a href="safety.html" class="group shrink-0 w-40 sm:w-auto bg-white rounded-2xl border border-slate-100 p-4 flex sm:flex-col items-center text-center gap-3 sm:gap-0 hover:shadow-lg hover:border-brand-200 transition-all duration-300">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 sm:mb-3 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center p-2 shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <img src="../catalog/safety/helmet.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-sm font-bold text-slate-700 group-hover:text-brand-600 transition-colors">Safety & PPE Supplies</span>
+                    </a>
+                    <a href="hand-tools.html" class="group shrink-0 w-40 sm:w-auto bg-white rounded-2xl border border-slate-100 p-4 flex sm:flex-col items-center text-center gap-3 sm:gap-0 hover:shadow-lg hover:border-brand-200 transition-all duration-300">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 sm:mb-3 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center p-2 shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <img src="../catalog/handtools/hammer.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-sm font-bold text-slate-700 group-hover:text-brand-600 transition-colors">Hand Tools</span>
+                    </a>
+                    <a href="power-tools.html" class="group shrink-0 w-40 sm:w-auto bg-white rounded-2xl border border-slate-100 p-4 flex sm:flex-col items-center text-center gap-3 sm:gap-0 hover:shadow-lg hover:border-brand-200 transition-all duration-300">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 sm:mb-3 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center p-2 shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <img src="../catalog/power/drill.webp" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-sm font-bold text-slate-700 group-hover:text-brand-600 transition-colors">Power Tools</span>
+                    </a>
+                    <a href="welding.html" class="group shrink-0 w-40 sm:w-auto bg-white rounded-2xl border border-slate-100 p-4 flex sm:flex-col items-center text-center gap-3 sm:gap-0 hover:shadow-lg hover:border-brand-200 transition-all duration-300">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 sm:mb-3 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center p-2 shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <img src="../catalog/welding/electrodes.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-sm font-bold text-slate-700 group-hover:text-brand-600 transition-colors">Welding Materials</span>
+                    </a>
+                    <a href="lifting.html" class="group shrink-0 w-40 sm:w-auto bg-white rounded-2xl border border-slate-100 p-4 flex sm:flex-col items-center text-center gap-3 sm:gap-0 hover:shadow-lg hover:border-brand-200 transition-all duration-300">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 sm:mb-3 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center p-2 shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <img src="../catalog/lifting/chain-sling.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-sm font-bold text-slate-700 group-hover:text-brand-600 transition-colors">Lifting Items</span>
+                    </a>
+                    <a href="general.html" class="group shrink-0 w-40 sm:w-auto bg-white rounded-2xl border border-slate-100 p-4 flex sm:flex-col items-center text-center gap-3 sm:gap-0 hover:shadow-lg hover:border-brand-200 transition-all duration-300">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 sm:mb-3 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center p-2 shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <img src="../catalog/general-1/generator.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-sm font-bold text-slate-700 group-hover:text-brand-600 transition-colors">General Products</span>
+                    </a>
+                </div>
+            </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-8 border-t border-white/5 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-slate-500 text-sm font-medium">
+                &copy; 2026 Accurate Project Solutions. All rights reserved. <br class="sm:hidden">
+                <a href="https://accurates.com.sa/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center min-h-[44px] text-brand-500 hover:text-brand-400 ml-2 transition-colors">www.accurates.com.sa</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation
+        (function () {
+            const btn = document.getElementById('menuToggle');
+            const menu = document.getElementById('mobileMenu');
+            const iconOpen = document.getElementById('menuIconOpen');
+            const iconClose = document.getElementById('menuIconClose');
+            if (!btn || !menu) return;
+
+            function setOpen(open) {
+                menu.classList.toggle('hidden', !open);
+                iconOpen.classList.toggle('hidden', open);
+                iconClose.classList.toggle('hidden', !open);
+                btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+                btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+            }
+
+            btn.addEventListener('click', () => setOpen(menu.classList.contains('hidden')));
+            menu.querySelectorAll('.mobile-link').forEach(a => a.addEventListener('click', () => setOpen(false)));
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
+            window.addEventListener('resize', () => { if (window.innerWidth >= 768) setOpen(false); });
+        })();
+
+        // Scroll-reveal
+        (function () {
+            const els = document.querySelectorAll('.reveal');
+            if (!('IntersectionObserver' in window) || !els.length) { els.forEach(el => el.classList.add('in-view')); return; }
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+            els.forEach(el => io.observe(el));
+        })();
+    </script>
+</body>
+</html>
