@@ -174,8 +174,12 @@
 
             <!-- Category tabs -->
             <div class="flex gap-2.5 sm:gap-3 overflow-x-auto sm:overflow-x-visible sm:flex-wrap sm:justify-center pb-2 mb-10 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-                    <button type="button" data-tab-btn="safety" aria-pressed="true" class="cat-tab-btn shrink-0 inline-flex items-center gap-2.5 px-5 py-3 rounded-full border-2 text-sm font-bold whitespace-nowrap transition-all duration-200 bg-slate-900 border-slate-900 text-white shadow-lg">
-                        <img src="catalog/safety/helmet.png" alt="" class="w-5 h-5 object-contain brightness-0 invert">
+                    <button type="button" data-tab-btn="fencing" aria-pressed="true" class="cat-tab-btn shrink-0 inline-flex items-center gap-2.5 px-5 py-3 rounded-full border-2 text-sm font-bold whitespace-nowrap transition-all duration-200 bg-slate-900 border-slate-900 text-white shadow-lg">
+                        <img src="catalog/fencing/icon.svg" alt="" class="w-5 h-5 object-contain brightness-0 invert">
+                        Fencing, Wire &amp; Steel
+                    </button>
+                    <button type="button" data-tab-btn="safety" aria-pressed="false" class="cat-tab-btn shrink-0 inline-flex items-center gap-2.5 px-5 py-3 rounded-full border-2 text-sm font-bold whitespace-nowrap transition-all duration-200 bg-white border-slate-200 text-slate-600 hover:border-brand-300 hover:text-brand-600">
+                        <img src="catalog/safety/helmet.png" alt="" class="w-5 h-5 object-contain ">
                         Safety & PPE Supplies
                     </button>
                     <button type="button" data-tab-btn="hand-tools" aria-pressed="false" class="cat-tab-btn shrink-0 inline-flex items-center gap-2.5 px-5 py-3 rounded-full border-2 text-sm font-bold whitespace-nowrap transition-all duration-200 bg-white border-slate-200 text-slate-600 hover:border-brand-300 hover:text-brand-600">
@@ -205,7 +209,213 @@
             </div>
 
             <!-- Product previews (one panel per category, toggled by the tabs above) -->
-                <div data-tab-panel="safety" class="cat-tab-panel">
+                <div data-tab-panel="fencing" class="cat-tab-panel">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:0ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/chain-link-fence.jpg" alt="Chain Link Fence" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Chain Link Fence</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:45ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/hcis-security-fence.jpg" alt="HCIS Security Fence" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">HCIS Security Fence</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:90ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/aramco-type-fence.jpg" alt="Aramco Type Fence" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Aramco Type Fence</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:135ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/highway-fencing.jpg" alt="Highway Fencing" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Highway Fencing</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:180ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/welded-mesh-fence.jpg" alt="Welded Mesh Fence" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Welded Mesh Fence</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:225ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/anti-climb-fence.jpg" alt="Anti-Climb Delay Fence" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Anti-Climb Delay Fence</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:270ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/palisade-fence.jpg" alt="Palisade Fence" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Palisade Fence</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:315ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/security-gates.jpg" alt="Security Gates" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Security Gates</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:360ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/anti-ram-fence.jpg" alt="Anti-Ram Fence" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Anti-Ram Fence</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:405ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/crash-rated-barrier.jpg" alt="Crash-Rated Barrier" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Crash-Rated Barrier</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:450ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/security-bollards.jpg" alt="Security Bollards" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Security Bollards</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:495ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/razor-wire.jpg" alt="Razor Wire (Concertina)" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Razor Wire (Concertina)</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/barbed-wire.jpg" alt="Barbed Wire" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Barbed Wire</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/pvc-coated-wire.jpg" alt="PVC Coated Wire" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">PVC Coated Wire</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/galvanized-wire.jpg" alt="Galvanized Wire" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Galvanized Wire</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/black-annealed-wire.jpg" alt="Black Annealed Wire" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Black Annealed Wire</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/baling-wire.jpg" alt="Baling Wire" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Baling Wire</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/deformed-wire.jpg" alt="Deformed Wire" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Deformed Wire</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/stitching-wire.jpg" alt="Stitching Wire & Pins" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Stitching Wire &amp; Pins</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/common-nails.jpg" alt="Common Nails" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Common Nails</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/cloth-hangers.jpg" alt="Cloth Hangers" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Cloth Hangers</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/bed-mesh.jpg" alt="Bed Mesh" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Bed Mesh</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/powder-pvc-coating.jpg" alt="Powder & PVC Coating" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Powder &amp; PVC Coating</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/black-rebar.jpg" alt="Black Rebar" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Black Rebar</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/epoxy-coated-rebar.jpg" alt="Epoxy Coated Rebar" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Epoxy Coated Rebar</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/rebar-couplers.jpg" alt="Rebar Couplers" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Rebar Couplers</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/cut-bend-rebar.jpg" alt="Cut & Bend Rebar" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Cut &amp; Bend Rebar</h4>
+                        </div>
+                        <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:540ms">
+                            <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="catalog/fencing/concrete-reinforcing-mesh.jpg" alt="Concrete Reinforcing Mesh" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 relative z-10">
+                            </div>
+                            <h4 class="font-semibold text-slate-700 text-sm leading-tight group-hover:text-brand-600 transition-colors px-1">Concrete Reinforcing Mesh</h4>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <a href="products/fencing.html" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-900 border-2 border-slate-200 hover:border-slate-300 px-8 py-3.5 rounded-full font-bold transition-all shadow-sm hover:shadow-md">
+                            View All 28 Fencing, Wire &amp; Steel Products
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div data-tab-panel="safety" class="cat-tab-panel hidden">
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                         <div class="reveal group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center" style="transition-delay:0ms">
                             <div class="w-full aspect-[4/3] mb-4 bg-slate-50/60 rounded-xl overflow-hidden flex items-center justify-center p-3 relative">
